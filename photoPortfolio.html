@@ -9,7 +9,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="photocss/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
@@ -22,51 +24,53 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
 <!-- Nav Bar -->
 <header>
-  <div id="navimage">
+  <div id="bannerimage">
     <nav id="homenav">
       <a href="index.html" class="w3-button w3-bar-item">Home</a>
       <a href="resumeWebpage.html" class="w3-button w3-bar-item">Resume</a>
       <a href="photoPortfolio.html" class="w3-button w3-bar-item">Photo Journal</a>
+      <a href="playlists.html" class="w3-button w3-bar-item">Playlists</a>
     </nav>
+    <div id="bannertext">
+      <h1 style="font-size: 50px"><i>Photography</i></h1>
+    </div>
   </div>
   </header>
 
   <section class="w3-container w3-center w3-content" style="max-width:1400px">
   <p>All of the photos you see below were taken utilizing vintage film cameras
     that I have found in thrift shops or antique stores and sometimes repaired in order to use.</p>
-  </section>
 
-<!-- Photography Grid-->
-<div class="row">
-  <div class="column">
-    <img src="images/portfolioImages/1.jpg" style="width:100%">
-    <img src="images/portfolioImages/2.jpg" style="width:100%">
-    <img src="images/portfolioImages/3.jpg" style="width:100%">
-    <img src="images/portfolioImages/4.jpg" style="width:100%">
-    </div>
-  <div class="column">
-    <img src="images/portfolioImages/5.jpg" style="width:100%">
-    <img src="images/portfolioImages/6.jpg" style="width:100%">
-    <img src="images/portfolioImages/7.jpg" style="width:100%">
-    <img src="images/portfolioImages/8.jpg" style="width:100%">
-    <img src="images/portfolioImages/17.jpg" style="width:100%">
-    </div>
-  <div class="column">
-     <img src="images/portfolioImages/9.jpg" style="width:100%">
-    <img src="images/portfolioImages/10.jpg" style="width:100%">
-    <img src="images/portfolioImages/11.jpg" style="width:100%">
-    <img src="images/portfolioImages/12.jpg" style="width:100%">
-    </div>
-  <div class="column">
-    <img src="images/portfolioImages/13.jpg" style="width:100%">
-    <img src="images/portfolioImages/14.jpg" style="width:100%">
-    <img src="images/portfolioImages/15.jpg" style="width:100%">
-    <img src="images/portfolioImages/16.jpg" style="width:100%">
-    <img src="images/portfolioImages/18.jpg" style="width:100%">
-    </div>
+<!-- Photography Gallery-->
 
-  </div>
+<div class="gallery">
+  <a href="images/portfolioImages/1.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/1-small.jpg></a>
+  <a href="images/portfolioImages/2.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/2-small.jpg></a>
+  <a href="images/portfolioImages/3.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/3-small.jpg></a>
+  <a href="images/portfolioImages/4.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/4-small.jpg></a>
+  <a href="images/portfolioImages/5.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/5-small.jpg></a>
+  <a href="images/portfolioImages/6.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/6-small.jpg></a>
+  <a href="images/portfolioImages/7.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/7-small.jpg></a>
+  <a href="images/portfolioImages/8.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/8-small.jpg></a>
+  <a href="images/portfolioImages/9.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/9-small.jpg></a>
+  <a href="images/portfolioImages/10.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/10-small.jpg></a>
+  <a href="images/portfolioImages/11.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/11-small.jpg></a>
+  <a href="images/portfolioImages/12.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/12-small.jpg></a>
+  <a href="images/portfolioImages/13.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/13-small.jpg></a>
+  <a href="images/portfolioImages/14.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/14-small.jpg></a>
+  <a href="images/portfolioImages/15.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/15-small.jpg></a>
+  <a href="images/portfolioImages/16.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/16-small.jpg></a>
+  <a href="images/portfolioImages/17.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/17-small.jpg></a>
+  <a href="images/portfolioImages/18.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/18-small.jpg></a>
+  <a href="images/portfolioImages/19.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/19-small.jpg></a>
+  <a href="images/portfolioImages/20.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/20-small.jpg></a>
+  <a href="images/portfolioImages/21.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/21-small.jpg></a>
+  <a href="images/portfolioImages/22.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/22-small.jpg></a>
+  <a href="images/portfolioImages/23.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/23-small.jpg></a>
+  <a href="images/portfolioImages/24.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/24-small.jpg></a>
+  <a href="images/portfolioImages/25.jpg" data-lightbox="mygallery"><img src=images/portfolioImages/25-small.jpg></a>
 </div>
+</section>
 
 <br>
 
