@@ -1,79 +1,119 @@
-<!DOCTYPE html>
-<html>
-<title>Homepage</title>
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="portfolio website">
-<meta name="author" content="Kyle Jernigan">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<style>
-html,body,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
-</head>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="Kyle Jernigan" content="" />
+        <title>Kyle Jernigan - Portfolio Webpage</title>
+        <!--Core CSS-->
+        <link href="Style/style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
+        <!--JS-->
+        <script src="JS/Animation.JS"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- Body of page -->
-<body class="w3-light-grey">
+    </head>
+    <body>
 
+        <header class="bg-light">
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar bg-dark">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="PhotoJournal.html">Photo Journal</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar -->
+          <!-- Full Page Intro -->
+          <div class="view" style="background-image: url('Style/img/background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light align-items-center">
+              <!-- Content -->
+              <div class="container">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-sm-12 mb-4 text-white text-center">
+                    <br>
+                    <br>
+                    <br>
+                    <h1 class="h1-reponsive text-white text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Kyle Jernigan</strong></h1>
+                    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                    <h5 class="text-uppercase mb-4 text-white wow fadeInDown" data-wow-delay="0.4s"><strong>Web Designer | Photographer | Muscian</strong></h5>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+          <!-- Full Page Intro -->
+        </header>
+        <!-- Main navigation -->
+        <!--Main Layout-->
+        <main class="bg-light">
+          <div class="container">
+            <!--Grid row-->
+            <div class="row py-5">
+              <!--Grid column-->
+              <div class="col-md-12 text-center">
+                <h1 class="bold text-center"><strong>About me</strong></h1>
+                <hr>
+                <img src="Style/img/doubleme.jpg" class="img-fluid" alt="Responsive image">
+                <hr>
+                <p>I graduated with a Bachelor's degree in Information Technology with a focus in Web & Mobile Programming. My interests include programming, graphic design, photography, and playing guitar. I enjoy learning about new techniques or perspectives in my field of interests. When I am learning about a new topic, I try to learn as much as I can about it.</p>
+                <p>I am interested in jobs that involve programming, graphic design, and applying a creative perspective to the job at hand. My work ethic is focusing on a difficult task until it is completed, and learning as much as I can throughout the process. I connect with others with ease and excel in team based projects. In college, I worked as an apprentice in the field of historic preservation, gaining valuable experience of working in situations where focusing on the small details were of the upmost importance.</p>
+                <p>Projects I have completed in various programming languages include creating numerous websites with JavaScript, HTML and CSS, creating multi-page databases utilizing MySQL and creating scripts to manipulate and modify multiple files with Python. I greatly enjoy applying a creative mindset to all sorts of programming problems I encounter.</p>
+                <p>This website offers a glimpse into who I am and displays some of the skills I have!</p>
+                <p>Thanks for checking it out!</p>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+        </main>
+        <!--Main Layout-->
+    </body>
 
-<!-- Nav Bar & Photo Banner -->
-  <header>
-    <div id="bannerimage">
-      <nav id="homenav">
-      <a href="index.html" class="w3-button w3-bar-item">Home</a>
-      <a href="resumeWebpage.html" class="w3-button w3-bar-item">Resume</a>
-      <a href="photoPortfolio.html" class="w3-button w3-bar-item">Photo Journal </a>
-      <a href="playlists.html" class="w3-button w3-bar-item">Playlists</a>
-      </nav>
-      <div id="bannertext">
-        <h1 style="font-size: 50px"><i>Hello, I'm Kyle Jernigan.</i></h1>
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <h6>Get in touch through social media!</h6>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/kyleisliving" target="_blank" role="button"><i class="bi bi-twitter"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/kyleisliving" target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/kyle-jernigan-b26530195" target="_blank" role="button"><i class="bi bi-linkedin"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/kyleisliving" target="_blank" role="button"><i class="bi bi-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
       </div>
-    </div>
-  </header>
-
-<!-- Main Content-->
-<section class="w3-container w3-center w3-content" style="max-width:1400px">
-    <p>
-      <hr>
-        I graduated with a Bachelor's degree in Information Technology with a focus in Web & Mobile Programming. My interests include programming, graphic design, photography, and playing guitar. I enjoy learning about new techniques or perspectives in my field of interests. When I am learning about a new topic, I try to learn as much as I can about it.
-<hr>
-I am interested in jobs that involve programming, graphic design, and applying a creative perspective to the job at hand. My work ethic is focusing on a difficult task until it is completed, and learning as much as I can throughout the process. I connect with others with ease and excel in team based projects. In college, I worked as an apprentice in the field of historic preservation, gaining valuable experience of working in situations where focusing on the small details were of the upmost importance.
-<hr>
-Projects I have completed in various programming languages include creating numerous websites with JavaScript, HTML and CSS, creating multi-page databases utilizing MySQL and creating scripts to manipulate and modify multiple files with Python. I greatly enjoy applying a creative mindset to all sorts of programming problems I encounter. </p>
-<hr>
-This website offers a glimpse into who I am and displays some of the skills I have. You can utilize the navigation bar at the top of the page or you can click one of the icons below which will take you to the page you desire!
-</section>
-
-<div class="w3-container w3-center w3-margin-top">
-    <p>
-    <a href="resumeWebpage.html"><i class="fa fa-address-card-o w3-hover-opacity" title="Resume" style="font-size:70px;"></i></a>
-    &emsp;&emsp;
-    <a href="photoPortfolio.html"><i class="fa fa-camera-retro w3-hover-opacity" title="Photo Journal" style="font-size:70px;"></i></a>
-    &emsp;&emsp;
-    <a href="playlists.html"><i class="fa fa-music w3-hover-opacity" title="Playlists" style="font-size:70px;"></i></a>
-    </p>
-</div>
-
-
-
-
-
-<!-- Footer-->
-  <footer id="footerimage">
-    <div id="footertext">
-    <p>Find me on social media!</p>
-    <a href="https://www.instagram.com/kyleisliving/" target=_blank><i class="fa fa-instagram w3-hover-opacity" style="font-size:30px;"></i></a>
-    &nbsp;
-    <a href="https://twitter.com/kyleisliving" target=_blank><i class="fa fa-twitter w3-hover-opacity" style="font-size:30px;"></i></a>
-    &nbsp;
-    <a href="https://www.linkedin.com/in/kyle-jernigan-b26530195/" target=_blank><i class="fa fa-linkedin w3-hover-opacity" style="font-size:30px;"></i></a>
-    &nbsp;
-    <br>
-    </div>
-  </footer>
-
-</body>
+      <!-- Grid container -->
+    </footer>
 </html>

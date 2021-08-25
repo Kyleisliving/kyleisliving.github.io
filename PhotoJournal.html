@@ -1,0 +1,324 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="Kyle Jernigan" content="" />
+        <title>Kyle Jernigan - Portfolio Webpage</title>
+        <!--Core CSS-->
+        <link href="Style/style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
+        <!--JS-->
+        <script src="JS/Animation.JS"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body class="bg-light">
+
+        <header class="bg-light">
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+              <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="PhotoJournal.html">Photo Journal<span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!-- Navbar -->
+            <!-- Full Page Intro -->
+            <div class="view" style="background-image: url('Style/img/background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+              <!-- Mask & flexbox options-->
+              <div class="mask rgba-black-light align-items-center">
+                   <!-- Content -->
+                <div class="container">
+                  <!--Grid row-->
+                  <div class="row">
+                    <!--Grid column-->
+                    <div class="col-md-12 mb-4 text-white text-center">
+                      <br>
+                      <br>
+                      <br>
+                      <h1 class="h1-reponsive text-white text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Photo Journal</strong></h1>
+                      <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                      <h5 class="text-uppercase mb-4 text-white wow fadeInDown" data-wow-delay="0.4s"><strong>35mm | Film | Photography</strong></h5>
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </div>
+              </div>
+              <!-- Mask & flexbox options-->
+            </div>
+            <!-- Full Page Intro -->
+          </header>
+
+
+          <!-- Gallery -->
+<!-- 
+Gallery is linked to lightbox using data attributes.
+
+To open lightbox, this is added to the gallery element: {data-toggle="modal" data-target="#exampleModal"}.
+
+To open carousel on correct image, this is added to each image element: {data-target="#carouselExample" data-slide-to="0"}.
+Replace '0' with corresponding slide number.
+-->
+
+<div class="row" id="gallery" data-toggle="modal" data-target="#exampleModal">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <img class="w-100" src="Style/journalphotos/1.jpg" alt="First slide" data-target="#carouselExample" data-slide-to="0">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <img class="w-100" src="Style/journalphotos/2.jpg" alt="Second slide" data-target="#carouselExample" data-slide-to="1">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <img class="w-100" src="Style/journalphotos/3.jpg" alt="Third slide" data-target="#carouselExample" data-slide-to="2">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <img class="w-100" src="Style/journalphotos/4.jpg" alt="Fourth slide" data-target="#carouselExample" data-slide-to="3">
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/5.jpg" alt="Fifth slide" data-target="#carouselExample" data-slide-to="4">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/6.jpg" alt="Sixth slide" data-target="#carouselExample" data-slide-to="5">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/7.jpg" alt="Seventh slide" data-target="#carouselExample" data-slide-to="6">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/8.jpg" alt="Eighth slide" data-target="#carouselExample" data-slide-to="7">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/9.jpg" alt="Nine slide" data-target="#carouselExample" data-slide-to="8">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/10.jpg" alt="Ten slide" data-target="#carouselExample" data-slide-to="9">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/11.jpg" alt="Eleven slide" data-target="#carouselExample" data-slide-to="10">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/12.jpg" alt="Twelve slide" data-target="#carouselExample" data-slide-to="11">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/13.jpg" alt="Thirteen slide" data-target="#carouselExample" data-slide-to="12">
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/14.jpg" alt="Fourteen slide" data-target="#carouselExample" data-slide-to="13">
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/15.jpg" alt="Fifteen slide" data-target="#carouselExample" data-slide-to="14">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/16.jpg" alt="Sixteen slide" data-target="#carouselExample" data-slide-to="15">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/17.jpg" alt="Seventeen slide" data-target="#carouselExample" data-slide-to="16">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/18.jpg" alt="Eighteen slide" data-target="#carouselExample" data-slide-to="17">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/19.jpg" alt="Nineteen slide" data-target="#carouselExample" data-slide-to="18">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/20.jpg" alt="Twenty slide" data-target="#carouselExample" data-slide-to="19">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/21.jpg" alt="TwentyOne slide" data-target="#carouselExample" data-slide-to="20">
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/22.jpg" alt="TwentyTwo slide" data-target="#carouselExample" data-slide-to="21">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/23.jpg" alt="TwentyThree slide" data-target="#carouselExample" data-slide-to="22">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/24.jpg" alt="TwentyFour slide" data-target="#carouselExample" data-slide-to="23">
+      </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+        <img class="w-100" src="Style/journalphotos/25.jpg" alt="TwentyFive slide" data-target="#carouselExample" data-slide-to="24">
+      </div>
+
+  </div>
+  
+  <!-- Modal -->
+  <!-- 
+  This part is straight out of Bootstrap docs. Just a carousel inside a modal.
+  -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExample" data-slide-to="1"></li>
+              <li data-target="#carouselExample" data-slide-to="2"></li>
+              <li data-target="#carouselExample" data-slide-to="3"></li>
+              <li data-target="#carouselExample" data-slide-to="4"></li>
+              <li data-target="#carouselExample" data-slide-to="5"></li>
+              <li data-target="#carouselExample" data-slide-to="6"></li>
+              <li data-target="#carouselExample" data-slide-to="7"></li>
+              <li data-target="#carouselExample" data-slide-to="8"></li>
+              <li data-target="#carouselExample" data-slide-to="9"></li>
+              <li data-target="#carouselExample" data-slide-to="10"></li>
+              <li data-target="#carouselExample" data-slide-to="11"></li>
+              <li data-target="#carouselExample" data-slide-to="12"></li>
+              <li data-target="#carouselExample" data-slide-to="13"></li>
+              <li data-target="#carouselExample" data-slide-to="14"></li>
+              <li data-target="#carouselExample" data-slide-to="15"></li>
+              <li data-target="#carouselExample" data-slide-to="16"></li>
+              <li data-target="#carouselExample" data-slide-to="17"></li>
+              <li data-target="#carouselExample" data-slide-to="18"></li>
+              <li data-target="#carouselExample" data-slide-to="19"></li>
+              <li data-target="#carouselExample" data-slide-to="20"></li>
+              <li data-target="#carouselExample" data-slide-to="21"></li>
+              <li data-target="#carouselExample" data-slide-to="22"></li>
+              <li data-target="#carouselExample" data-slide-to="23"></li>
+              <li data-target="#carouselExample" data-slide-to="24"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="Style/journalphotos/1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/3.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/4.jpg" alt="Fourth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/5.jpg" alt="Fifth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/6.jpg" alt="Sixth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/7.jpg" alt="Seventh slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/8.jpg" alt="Eighth slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/9.jpg" alt="Nine slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/10.jpg" alt="Ten slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/11.jpg" alt="Eleven slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/12.jpg" alt="Twelve slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/13.jpg" alt="Thirteen slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/14.jpg" alt="Fourteen slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/15.jpg" alt="Fifteen slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/16.jpg" alt="Sixteen slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/17.jpg" alt="Seventeen slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/18.jpg" alt="Eighteen slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/19.jpg" alt="Nineteen slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/20.jpg" alt="Twenty slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/21.jpg" alt="TwentyOne slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/22.jpg" alt="TwentyTwo slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/23.jpg" alt="TwentyThree slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/24.jpg" alt="TwentyFour slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Style/journalphotos/25.jpg" alt="TwentyFive slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    </body>
+
+    <!--Footer stuff-->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <h6>Get in touch through social media!</h6>
+          <!-- Section: Social media -->
+          <section class="mb-4">
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/kyleisliving" target="_blank" role="button"><i class="bi bi-twitter"></i></a>
+  
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/kyleisliving" target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+  
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/kyle-jernigan-b26530195" target="_blank" role="button"><i class="bi bi-linkedin"></i></a>
+  
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/kyleisliving" target="_blank" role="button"><i class="bi bi-github"></i></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+
+</html>
