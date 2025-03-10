@@ -1,0 +1,70 @@
+html,
+body,
+header,
+.view {
+  height: 90%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 50vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  background-color: darkslategray;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: darkslategray !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.item {
+  padding: 15px;
+}
+
+.summaexample {
+  display: flex;
+  margin:auto;
+  width: 88%;
+  padding-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+  .summaexample {
+    float: none;
+    margin-left: unset;
+    margin-right: unset;
+    max-width: 100%;
+  }
+}
