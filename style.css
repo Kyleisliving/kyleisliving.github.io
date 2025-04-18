@@ -53,18 +53,63 @@ h5 {
   padding: 15px;
 }
 
-.summaexample {
-  display: flex;
-  margin:auto;
-  width: 88%;
-  padding-bottom: 35px;
-}
 
 @media (max-width: 991px) {
-  .summaexample {
-    float: none;
-    margin-left: unset;
-    margin-right: unset;
-    max-width: 100%;
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  text-align: center;
+}
+}
+
+.container {
+  width: 100%;
+  max-width: none; /* Remove the fixed max-width */
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px; /* Adjust padding as needed */
+  padding-right: 15px;
+}
+
+.col-md-12.align-right.shadow.p-3.mb-5.gx-1.bg-white.rounded {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; /* Center text content */
+}
+
+.col-md-12.align-right.shadow.p-3.mb-5.gx-1.bg-white.rounded > div {
+  width: 100%; /* Make child divs take full width */
+}
+
+.iframe-container {
+  width: 400px; /* Default: 50% each */
+  height: 250px;
+  display: flex;
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+@media (max-width: 768px) {
+  .col-5,
+  .iframe-container {
+    width: 100%; /* 100% width on smaller screens */
+    display: flex;
+    place-items: center;
   }
 }
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  h6 {
+    width: 100%;
+  }
+}
+
+
+.text-justify {
+  text-align: justify;
+}
+
+
+
+
