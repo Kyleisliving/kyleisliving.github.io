@@ -79,15 +79,14 @@
             <!--Grid row-->
             <div class="row py-5">
               <!--Grid column-->
-              <div class="col-md-12 text-center">
-                <h1 class="bold text-center"><strong>About me</strong></h1>
+              <div class="col-md-12 text-center fade-in-section">
+                <h2 class="bold text-center">About Me</h2>
                 <hr>
-                <img src="Style/img/doubleme.jpg" class="img-fluid" alt="Responsive image" style="border-radius: 4px;" >
+                <img src="Style/img/doubleme.jpg" class="img-fluid about-photo" alt="Kyle Jernigan">
                 <br>
                 <br>
-                <div class="text-center h6">My name is Kyle and I'm a creator living in Wilmington, NC.<br><br>Some of my favorite things are film photography <i>(I even have my own darkroom)</i>, music <i>(musician and collector since I was in high school)</i>, and writing short stories. My personal art style is rooted in DIY and very hands on art mediums and I love collaborating with other visionaries and bringing dreams into the real world. I enjoy learning about new techniques or perspectives in my field of interests.
-                <br><br>I graduated with a Bachelor's degree in Information Technology with a focus in Web & Mobile Programming and have a passion for streamlining workflows & problem solving user interaction while presenting them in an elegant and beautiful lens. I'm passionate about being the bridge that brings functionality and style together.<br>Projects I have worked on have utilized tools and software such as Wordpress, Woo Commerce, Figma, Scribus, ScribeHow, and much more!
-
+                <div class="text-center about-text">My name is Kyle and I'm a creator living in Wilmington, NC.<br><br>Some of my favorite things are film photography <i>(I even have my own darkroom)</i>, music <i>(musician and collector since I was in high school)</i>, and writing short stories. My personal art style is rooted in DIY and very hands-on art mediums and I love collaborating with other visionaries and bringing dreams into the real world. I enjoy learning about new techniques or perspectives in my field of interest.
+                <br><br>I graduated with a Bachelor's degree in Information Technology with a focus in Web &amp; Mobile Programming and have a passion for streamlining workflows &amp; problem solving user interaction while presenting them in an elegant and beautiful lens. I'm passionate about being the bridge that brings functionality and style together. Projects I have worked on have utilized tools and software such as WordPress, WooCommerce, Figma, Scribus, ScribeHow, and much more!
                 </div>
               </div>
               <!--Grid column-->
@@ -96,7 +95,6 @@
           </div>
         </main>
         <!--Main Layout-->
-    </body>
 
     <footer class="bg-dark text-center text-white">
       <!-- Grid container -->
@@ -117,4 +115,19 @@
       </div>
       <!-- Grid container -->
     </footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target); // only animate once
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
+</script>
+
+    </body>
 </html>
