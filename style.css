@@ -1,0 +1,382 @@
+/* ── Google Fonts ── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap');
+
+/* ── Base typography ── */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #2d2d2d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* ── Hero heading overrides ── */
+.view h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.view h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+/* ── About photo ── */
+.about-photo {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ── About text ── */
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ── Portfolio carousel selector ── */
+.project-carousel-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 32px auto;
+  position: relative;
+}
+
+.project-carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 8px 4px 12px 4px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Center cards when they fit; scroll horizontally when they don't */
+.project-carousel::before,
+.project-carousel::after {
+  content: '';
+  margin: auto;
+}
+
+.project-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-card {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  background: #fff;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  min-width: 160px;
+  max-width: 200px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.carousel-card:hover {
+  border-color: #b0b0b0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.carousel-card.active {
+  border-color: #2d5be3;
+  box-shadow: 0 2px 12px rgba(45, 91, 227, 0.15);
+}
+
+.carousel-card-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.carousel-card-logo-placeholder {
+  width: 30px;
+  height: 30px;
+  background: #e8e8e8;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.carousel-card-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-scroll-btn {
+  position: absolute;
+  right: -16px;
+  top: 50%;
+  transform: translateY(-60%);
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 0.8rem;
+  color: #444;
+  transition: background 0.2s;
+  z-index: 2;
+}
+
+.carousel-scroll-btn:hover {
+  background: #ffffff;
+}
+
+/* ── Portfolio detail panel ── */
+.portfolio-card {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.35s ease, transform 0.35s ease, opacity 0.4s ease;
+  display: none;
+  opacity: 0;
+}
+
+.portfolio-card.active {
+  display: block;
+}
+
+.portfolio-card.active.is-visible {
+  opacity: 1;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.11), 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Horizontal split: info left, embed right */
+.portfolio-card-inner {
+  display: flex;
+  align-items: stretch;
+  min-height: 420px;
+}
+
+.portfolio-card-info {
+  flex: 0 0 38%;
+  padding: 36px 32px;
+  border-right: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-card-embed {
+  flex: 1;
+  min-height: 420px;
+}
+
+.portfolio-card-embed .figma-embed {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: none;
+  border-radius: 0;
+  display: block;
+}
+
+.card-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.card-company {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.card-role {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9a9a9a;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.card-divider {
+  width: 36px;
+  height: 3px;
+  background-color: #2d5be3;
+  border: none;
+  margin: 0 0 16px 0;
+}
+
+.card-body-text {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.card-cta {
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2d5be3;
+  font-weight: 600;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+/* Stack vertically on mobile */
+@media (max-width: 768px) {
+  .portfolio-card-inner {
+    flex-direction: column;
+  }
+
+  .portfolio-card-info {
+    flex: none;
+    border-right: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 28px 24px;
+  }
+
+  .portfolio-card-embed,
+  .portfolio-card-embed .figma-embed {
+    min-height: 340px;
+  }
+
+  .carousel-card {
+    min-width: 140px;
+  }
+}
+
+html,
+body,
+header,
+.view {
+  height: 90%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 50vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+  background-color: darkslategray;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: darkslategray !important;
+  }
+}
+
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+.item {
+  padding: 15px;
+}
+
+.container {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.iframe-container {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .col-5,
+  .iframe-container {
+    width: 100%;
+    display: flex;
+    place-items: center;
+  }
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* ── Scroll fade-in ── */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-section:nth-child(2) { transition-delay: 0.1s; }
+.fade-in-section:nth-child(3) { transition-delay: 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
