@@ -3,25 +3,20 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="Kyle Jernigan" content="" />
-        <title>Kyle Jernigan - Portfolio Webpage</title>
+        <title>Kyle Jernigan - Portfolio</title>
         <link rel="icon" href="Style/img/favicon.png">
-        <!--Core CSS-->
         <link href="Style/style.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-        
-        <!--JS-->
         <script src="JS/Animation.JS"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
     </head>
 
     <body class="bg-light">
 
         <header class="bg-light">
-            <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
               <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,45 +40,66 @@
                 </div>
               </div>
             </nav>
-            <!-- Navbar -->
-            <!-- Full Page Intro -->
             <div class="view" style="background-image: url('Style/img/background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-              <!-- Mask & flexbox options-->
               <div class="mask rgba-black-light align-items-center">
-                   <!-- Content -->
                 <div class="container">
-                  <!--Grid row-->
                   <div class="row">
-                    <!--Grid column-->
                     <div class="col-md-12 mb-4 text-white text-center">
-                      <br>
-                      <br>
-                      <h1 class="h1-reponsive text-white text-uppercase font-weight-bold mb-0 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s"><strong>Portfolio</strong></h1>
-                      <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
-                      <h5 class="text-uppercase mb-4 text-white wow fadeInDown" data-wow-delay="0.4s"><strong>UI/UX | Design</strong></h5>
+                      <br><br>
+                      <h1 class="h1-reponsive text-white text-uppercase font-weight-bold mb-0 pt-md-5 pt-5"><strong>Portfolio</strong></h1>
+                      <hr class="hr-light my-4">
+                      <h5 class="text-uppercase mb-4 text-white"><strong>UI/UX | Design</strong></h5>
                     </div>
-                    <!--Grid column-->
                   </div>
-                  <!--Grid row-->
                 </div>
               </div>
-              <!-- Mask & flexbox options-->
             </div>
-            <!-- Full Page Intro -->
-          </header>
+        </header>
+
         <main class="bg-light" style="padding: 48px 20px;">
 
+          <!-- ── Project Carousel Selector ── -->
+          <div class="project-carousel-wrapper fade-in-section">
+            <div class="project-carousel" id="projectCarousel">
+
+              <div class="carousel-card active" data-target="card-summaware">
+                <img src="Style/img/summaware.png" class="carousel-card-logo" alt="Summaware">
+                <span class="carousel-card-name">Summaware</span>
+              </div>
+
+              <div class="carousel-card" data-target="card-bangor">
+                <img src="Style/img/BangorNewsLogo 4.jpg" class="carousel-card-logo" alt="Bangor Daily News">
+                <span class="carousel-card-name">Bangor Daily News</span>
+              </div>
+
+              <div class="carousel-card" data-target="card-minc">
+                <img src="Style/img/minclogo.png" class="carousel-card-logo" alt="minclogo">
+                <span class="carousel-card-name">MINC</span>
+              </div>
+              
+              <div class="carousel-card" data-target="card-criterion">
+                <img src="Style/img/criterionlogo 1.png" class="carousel-card-logo" alt="criterionlogo">
+                <span class="carousel-card-name">Criterion Channel</span>
+              </div>
+
+              <!-- Add future project carousel cards here following the same pattern -->
+
+            </div>
+            <button class="carousel-scroll-btn" id="carouselScrollBtn" aria-label="Scroll projects">&#8250;</button>
+          </div>
+
+          <!-- ── Project Detail Cards ── -->
+
           <!-- Summaware -->
-          <div class="shadow-sm mb-5 bg-white portfolio-card fade-in-section">
+          <div class="portfolio-card active fade-in-section" id="card-summaware">
             <div class="portfolio-card-inner">
               <div class="portfolio-card-info">
-                <img src="Style/img/summaware.png" class="card-logo" alt="Summaware logo">
                 <h3 class="card-company">Summaware</h3>
                 <span class="card-role">Lead UI/UX Designer &mdash; <a href="https://www.summaware.com" target="_blank">Summaware.com</a></span>
                 <hr class="card-divider">
                 <p class="card-body-text">Summaware is an all-in-one ERP and media workflow platform built to replace the fragmented software stacks that news publishers had been duct-taping together for years. The platform consolidates five core business systems — Editorial (CMS), Circulation &amp; Subscription Billing, Advertising (CRM), Production &amp; Layout Automation, and Business Intelligence &amp; Analytics — into a single unified experience.</p>
                 <p class="card-body-text">As Head of UI/UX Design, my challenge was making complex, cross-departmental workflows feel approachable for the people using them every day. I owned the design process end-to-end: translating messy, multi-system logic into clean, intuitive flows; presenting decisions to key stakeholders; and working closely with dev teams to make sure the builds matched the vision.</p>
-                <span class="card-cta">↗ Interact with the case study</span>
+                <span class="card-cta">&#8599; Interact with the case study</span>
               </div>
               <div class="portfolio-card-embed">
                 <iframe class="figma-embed" src="https://embed.figma.com/proto/lYg79xTsxHhQd7GK4fHr6Q/Summaware-Case-Study?page-id=0%3A1&node-id=1-2&viewport=390%2C238%2C0.26&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share" allowfullscreen></iframe>
@@ -92,16 +108,15 @@
           </div>
 
           <!-- Bangor Daily News -->
-          <div class="shadow-sm mb-5 bg-white portfolio-card fade-in-section">
+          <div class="portfolio-card" id="card-bangor">
             <div class="portfolio-card-inner">
               <div class="portfolio-card-info">
-                <img src="Style/img/BangorNewsLogo 4.jpg" class="card-logo" alt="Bangor Daily News logo">
                 <h3 class="card-company">Bangor Daily News</h3>
                 <span class="card-role">UI/UX Designer &mdash; Client Project</span>
                 <hr class="card-divider">
                 <p class="card-body-text">Brought in as a contract designer alongside my work at Summaware, I was tasked with rethinking Bangor Daily News's subscription purchase flow from the ground up. This wasn't a light refresh — I built the entire design system for this project: style guide, component library, and the full end-to-end workflow.</p>
                 <p class="card-body-text">The design went through several rounds of stakeholder review, and I iterated accordingly at each stage — balancing their editorial identity with a purchase experience that felt modern and frictionless. The goal was to make subscribers feel like they were joining something meaningful, not just checking out a cart.</p>
-                <span class="card-cta">↗ Click through the prototype</span>
+                <span class="card-cta">&#8599; Click through the prototype</span>
               </div>
               <div class="portfolio-card-embed">
                 <iframe class="figma-embed" src="https://embed.figma.com/proto/aRgVLQY9qrhs8IY59m10Mt/Bangor-Demo?page-id=0%3A1&node-id=1-167&p=f&viewport=229%2C128%2C0.17&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A167&embed-host=share" allowfullscreen></iframe>
@@ -109,8 +124,10 @@
             </div>
           </div>
 
+
+
           <!-- Criterion Channel -->
-          <div class="shadow-sm mb-5 bg-white portfolio-card fade-in-section">
+          <div class="portfolio-card" id="card-criterion">
             <div class="portfolio-card-inner">
               <div class="portfolio-card-info">
                 <h3 class="card-company">Criterion Channel</h3>
@@ -118,7 +135,7 @@
                 <hr class="card-divider">
                 <p class="card-body-text">This one started with a simple premise: as a designer, I believe the best work comes from genuinely understanding what it feels like to need something. Criterion Channel is an app I use regularly and love — so when I noticed friction in the search and discovery experience, I couldn't help but ask <em>what would I actually want here?</em></p>
                 <p class="card-body-text">I put myself fully in the user's seat and designed the experience I wished existed — a more refined, intuitive search flow that feels as cinematic as the films it surfaces. No client brief, no stakeholder approval — just a designer treating a product they care about as a design problem worth solving.</p>
-                <span class="card-cta">↗ Explore the design process</span>
+                <span class="card-cta">&#8599; Explore the design process</span>
               </div>
               <div class="portfolio-card-embed">
                 <iframe class="figma-embed" src="https://embed.figma.com/proto/ck3b8RD6Rpzxf1pm5EqH73/Searching-For-a-Better-Criterion-Channel?page-id=0%3A1&node-id=1-2&p=f&viewport=214%2C157%2C0.21&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2&embed-host=share" allowfullscreen></iframe>
@@ -126,40 +143,112 @@
             </div>
           </div>
 
+          <!-- MINC Project -->
+          <div class="portfolio-card" id="card-minc">
+            <div class="portfolio-card-inner">
+              <div class="portfolio-card-info">
+                <h3 class="card-company">MINC</h3>
+                <span class="card-role">UI/UX Design &mdash; Client Project</span>
+                <hr class="card-divider">
+                <p class="card-body-text">Following the success of the Bangor Daily News project, the same clients brought me back for a second contract — this time for a broader initiative. MINC (Maine Independent News Collective) is a unified platform for a community of local publications across Maine, with Bangor Daily News among them, built around the idea of independent outlets working together for the betterment of their communities and businesses.</p>
+                <p class="card-body-text">My design strategy leaned into the identity of the region itself — rural Maine landscapes, a sense of place, and the spirit of collaboration. I was tasked with auditing and refreshing the existing landing page, then designing net-new layouts for the FAQ and Contact pages, ensuring visual and structural consistency across all three.</p>
+                <p class="card-body-text">The project moved quickly. After the initial delivery, the only revision requested was alternate background treatments for the strategy steps section on the About page — which I turned around same-day.</p>
+                <span class="card-cta">&#8599; Explore the design process</span>
+              </div>
+              <div class="portfolio-card-embed">
+                <iframe class="figma-embed" src="https://embed.figma.com/design/6zX4REmHIctNFWX5tfJxf5/MINC-Project?node-id=0-1&embed-host=share" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
         </main>
 
-    <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-          <h6>Get in touch through social media!</h6>
-          <!-- Section: Social media -->
-          <section class="mb-4">
-            <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/kyleisliving" target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+        <footer class="bg-dark text-center text-white">
+          <div class="container p-4 pb-0">
+            <h6>Get in touch through social media!</h6>
+            <section class="mb-4">
+              <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/kyleisliving" target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+              <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/kyle-jernigan-b26530195" target="_blank" role="button"><i class="bi bi-linkedin"></i></a>
+              <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/kyleisliving" target="_blank" role="button"><i class="bi bi-github"></i></a>
+            </section>
+          </div>
+        </footer>
 
-            <!-- Linkedin -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/kyle-jernigan-b26530195" target="_blank" role="button"><i class="bi bi-linkedin"></i></a>
+        <script>
+          // ── Carousel selector logic ──
+          const carouselCards = document.querySelectorAll('.carousel-card');
+          const portfolioCards = document.querySelectorAll('.portfolio-card');
 
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/kyleisliving" target="_blank" role="button"><i class="bi bi-github"></i></a>
-          </section>
-          <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
-      </footer>
+          carouselCards.forEach(card => {
+            card.addEventListener('click', () => {
+              const targetId = card.getAttribute('data-target');
 
-<script>
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('is-visible');
-        observer.unobserve(entry.target); // only animate once
-      }
-    });
-  }, { threshold: 0.08 });
+              // Update carousel active state
+              carouselCards.forEach(c => c.classList.remove('active'));
+              card.classList.add('active');
 
-  document.querySelectorAll('.fade-in-section').forEach(el => observer.observe(el));
-</script>
+              // Show the matching detail card, hide others
+              portfolioCards.forEach(pc => {
+                pc.classList.remove('active');
+                pc.classList.remove('is-visible');
+              });
+
+              const target = document.getElementById(targetId);
+              if (target) {
+                target.classList.add('active');
+                // Small delay so display:block registers before transition
+                requestAnimationFrame(() => {
+                  requestAnimationFrame(() => {
+                    target.classList.add('is-visible');
+                  });
+                });
+                // Scroll detail card into view smoothly on mobile, offset for fixed navbar
+                if (window.innerWidth <= 768) {
+                  const navbarHeight = document.querySelector('.navbar') ? document.querySelector('.navbar').offsetHeight : 56;
+                  const cardTop = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight - 16;
+                  window.scrollTo({ top: cardTop, behavior: 'smooth' });
+                }
+              }
+            });
+          });
+
+          // ── Carousel scroll button ──
+          const carousel = document.getElementById('projectCarousel');
+          const scrollBtn = document.getElementById('carouselScrollBtn');
+
+          scrollBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: 220, behavior: 'smooth' });
+          });
+
+          // Hide scroll button if all cards fit without scrolling
+          function updateScrollBtn() {
+            const overflowing = carousel.scrollWidth > carousel.clientWidth + 10;
+            scrollBtn.style.display = overflowing ? 'flex' : 'none';
+          }
+          updateScrollBtn();
+          window.addEventListener('resize', updateScrollBtn);
+
+          // ── Scroll fade-in ──
+          const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.08 });
+
+          // Only observe non-portfolio-card elements for the scroll fade
+          // (portfolio cards handle their own visibility via click)
+          document.querySelectorAll('.fade-in-section:not(.portfolio-card)').forEach(el => observer.observe(el));
+
+          // Trigger the first card visible on load
+          const firstCard = document.querySelector('.portfolio-card.active');
+          if (firstCard) firstCard.classList.add('is-visible');
+        </script>
+
+    </body>
+</html>
 
     </body>
 </html>
